@@ -17,8 +17,8 @@ This project contains automated tests for the TradeNation website using **Playwr
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/tradenation-playwright-tests.git
-cd tradenation-playwright-tests
+git clone https://github.com/ayushi-dixit09/tradenation-playwright-tests
+cd ASSESMENT PROJECT
 
 
 
