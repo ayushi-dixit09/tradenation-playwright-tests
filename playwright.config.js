@@ -78,4 +78,8 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
-
+module.exports={
+  use: {
+    viewport: {width :1280,height:800},
+  },
+};

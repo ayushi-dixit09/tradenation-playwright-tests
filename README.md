@@ -20,18 +20,12 @@ This project contains automated tests for the TradeNation website using **Playwr
 git clone https://github.com/ayushi-dixit09/tradenation-playwright-tests
 cd ASSESMENT PROJECT
 
-
-
-
-npm install
+2. Install playwright 
+npm init playwright@latest
+//browsers can be install separately//
 
 3. Install Playwright browsers:
-
-
-
 npx playwright install
-
-
 ---
 
 Project Structure
@@ -42,8 +36,9 @@ Project Structure
 /tests
     TradeNationHomePage.spec.js      # Positive test
     TradeNationLoginPage.spec.js       # Negative test
+package-lock.json
+ package.json
 playwright.config.js
-package.json
 README.md
 
 
@@ -52,28 +47,16 @@ README.md
 Running Tests
 
 1. Run all tests:
-
-
-
 npx playwright test
 
 2. Run a single test:
-
-
-
 npx playwright test tests/TradeNationHomePage.js
 npx playwright test tests/TradeNationLoginpage.js
 
 3. Run tests in headed mode (playwright runner visible):
-
-
-
 npx playwright test --ui
 
 4. Run tests in a specific browser:
-
-
-
 npx playwright test --headed --project=chromium
 
 
@@ -96,12 +79,10 @@ Click on "Sign up / Log in"
 
 Click on "Log in here"
 
-
 Enter invalid credentials
 
 Verify validation error message
 
-Desktop viewport: 1280x800
 
 
 
@@ -110,5 +91,4 @@ Desktop viewport: 1280x800
 Notes
 
 All tests use Page Object Model for maintainability.
-
-Designed to run in desktop viewport for responsive testing.
+ALL tests are using Desktop viewport(width:1280,height:800) from playwright.config.js file.
