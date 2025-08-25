@@ -88,7 +88,10 @@ Verify validation error message
 
 ---
 
-Notes
+Notes:
 
 All tests use Page Object Model for maintainability.
 ALL tests are using Desktop viewport(width:1280,height:800) from playwright.config.js file.
+TradeNationLoginWithGoogle could not be automate further because;
+  1.Google sandboxes the popup(scripts inside are blocked due to safety reason)
+  Therefore, the test validates only that navigation to google account page taking place.
